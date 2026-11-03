@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="_CALCULATOR_ Banner" width="100%">
+</p>
+
 # Web Calculator
 
 A simple and responsive Web Calculator developed using HTML, CSS, and JavaScript as part of the CodSoft Web Development Internship (Level 1 – Task 3).
