@@ -2,37 +2,32 @@
   <img src="assets/banner.png" alt="_CALCULATOR_ Banner" width="100%">
 </p>
 
-<div align="center">
-
-[![Live Demo](https://img.shields.io/badge/Live_Website-Active_Deployment-00C853?style=for-the-badge&logo=googlechrome&logoColor=white)](https://isbandurahuman-r.github.io/_CALCULATOR_/)
-
-› **[Launch High-Precision Web Calculator »](https://isbandurahuman-r.github.io/_CALCULATOR_/)**
-
-</div>
-
 # ◈ Web Calculator
 
-A simple and responsive Web Calculator developed using HTML, CSS, and JavaScript as part of the CodSoft Web Development Internship (Level 1 – Task 3).
+## ◆ About the Project
+Web Calculator is a responsive arithmetic calculator developed using HTML, CSS, and vanilla JavaScript. Created as part of the CodSoft Web Development Internship, it provides clean numerical computation across desktop and mobile screen sizes.
 
-## ✦ Features
-- Perform basic arithmetic operations
-- Clear and delete functionality
-- Responsive design for different screen sizes
-- User-friendly interface
-- Real-time calculations
+## ❖ Key Features
+- ▪ Execution of core arithmetic operations (addition, subtraction, multiplication, division).
+- ▫ Decimal input handling and mathematical expression evaluation.
+- ▴ Clear screen (AC) and single-character delete functionality.
+- ▿ Responsive CSS Grid keypad layout with active touch and click feedback.
 
-## ❖ Technologies Used
-- HTML
-- CSS
-- JavaScript
+## ⬢ Technologies Used
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
-## ⬡ Project Preview
-A clean and functional calculator designed to strengthen front-end development skills and JavaScript fundamentals.
+## § Requirements
+- Modern web browser
 
-## § Internship Information
-- Internship: CodSoft Web Development Internship
-- Level: 1
-- Task: 3 – Calculator
+## ▲ Installation & Execution
+```bash
+# Open index.html directly or serve locally
+python -m http.server 8000
+```
+Open `http://localhost:8000` in your web browser.
 
-## ※ Author
-ISBANDU RAHUMAN R
+## ※ Developer
+Developer: ISBANDU RAHUMAN R  
+GitHub: https://github.com/ISBANDURAHUMAN-R
