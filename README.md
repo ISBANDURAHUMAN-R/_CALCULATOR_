@@ -19,28 +19,28 @@ Web Calculator is a responsive arithmetic calculator developed using HTML, CSS, 
 ```mermaid
 graph TD
     subgraph View ["Responsive CSS Grid UI"]
-        Display[LCD Expression & Result Display]
-        Keypad[CSS Grid Numeric & Operator Keypad]
+        Display["LCD Expression &<br/>Result Display"]
+        Keypad["CSS Grid Numeric &<br/>Operator Keypad"]
     end
 
     subgraph Controller ["JavaScript Event Listener Engine"]
-        Keypad --> ClickEvent[Click & Touch Event Handlers]
-        ClickEvent --> ActionRouter{Token Type}
-        ActionRouter -- Digit / Dot --> TokenAppend[Append Character to Expression]
-        ActionRouter -- Operator --> OpAppend[Append Binary Operator]
-        ActionRouter -- AC --> ClearAll[Reset Display Buffer]
-        ActionRouter -- DEL --> DelChar[Pop Trailing Character]
-        ActionRouter -- Equals --> EvalEngine[Expression Evaluation Engine]
+        Keypad --> ClickEvent["Click & Touch<br/>Event Handlers"]
+        ClickEvent --> ActionRouter{"Token Type"}
+        ActionRouter -- Digit / Dot --> TokenAppend["Append Character<br/>to Expression"]
+        ActionRouter -- Operator --> OpAppend["Append Binary<br/>Operator"]
+        ActionRouter -- AC --> ClearAll["Reset Display<br/>Buffer"]
+        ActionRouter -- DEL --> DelChar["Pop Trailing<br/>Character"]
+        ActionRouter -- Equals --> EvalEngine["Expression Evaluation<br/>Engine"]
     end
 
     subgraph Evaluation ["Evaluation & State Management"]
-        TokenAppend --> Buffer[Current Expression String]
+        TokenAppend --> Buffer["Current Expression<br/>String"]
         OpAppend --> Buffer
         DelChar --> Buffer
         ClearAll --> Buffer
         Buffer --> Display
-        EvalEngine --> SafeParse[Safe Math Parser & DivZero Guard]
-        SafeParse --> OutputState[Format Floating Result]
+        EvalEngine --> SafeParse["Safe Math Parser &<br/>DivZero Guard"]
+        SafeParse --> OutputState["Format Floating<br/>Result"]
         OutputState --> Display
     end
 ```
