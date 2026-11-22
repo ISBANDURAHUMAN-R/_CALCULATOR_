@@ -18,29 +18,29 @@ Web Calculator is a responsive arithmetic calculator developed using HTML, CSS, 
 ## ◆ System Architecture
 ```mermaid
 graph TD
-    subgraph View ["Responsive CSS Grid UI"]
-        Display["LCD Expression &<br/>Result Display"]
-        Keypad["CSS Grid Numeric &<br/>Operator Keypad"]
+    subgraph View ["&nbsp; Responsive CSS Grid UI &nbsp;"]
+        Display["&nbsp; LCD Expression &amp; &nbsp;<br/>&nbsp; Result Display &nbsp;"]
+        Keypad["&nbsp; CSS Grid Numeric &nbsp;<br/>&nbsp; &amp; Operator Keypad &nbsp;"]
     end
 
-    subgraph Controller ["JavaScript Event Listener Engine"]
-        Keypad --> ClickEvent["Click & Touch<br/>Event Handlers"]
-        ClickEvent --> ActionRouter{"Token Type"}
-        ActionRouter -- Digit / Dot --> TokenAppend["Append Character<br/>to Expression"]
-        ActionRouter -- Operator --> OpAppend["Append Binary<br/>Operator"]
-        ActionRouter -- AC --> ClearAll["Reset Display<br/>Buffer"]
-        ActionRouter -- DEL --> DelChar["Pop Trailing<br/>Character"]
-        ActionRouter -- Equals --> EvalEngine["Expression Evaluation<br/>Engine"]
+    subgraph Controller ["&nbsp; JavaScript Event Listener Engine &nbsp;"]
+        Keypad --> ClickEvent["&nbsp; Click &amp; Touch &nbsp;<br/>&nbsp; Event Handlers &nbsp;"]
+        ClickEvent --> ActionRouter{"&nbsp; Token Type? &nbsp;"}
+        ActionRouter -- Digit / Dot --> TokenAppend["&nbsp; Append Character &nbsp;<br/>&nbsp; to Expression &nbsp;"]
+        ActionRouter -- Operator --> OpAppend["&nbsp; Append Binary &nbsp;<br/>&nbsp; Operator &nbsp;"]
+        ActionRouter -- AC --> ClearAll["&nbsp; Reset Display &nbsp;<br/>&nbsp; Buffer &nbsp;"]
+        ActionRouter -- DEL --> DelChar["&nbsp; Pop Trailing &nbsp;<br/>&nbsp; Character &nbsp;"]
+        ActionRouter -- Equals --> EvalEngine["&nbsp; Expression Evaluation &nbsp;<br/>&nbsp; Engine &nbsp;"]
     end
 
-    subgraph Evaluation ["Evaluation & State Management"]
-        TokenAppend --> Buffer["Current Expression<br/>String"]
+    subgraph Evaluation ["&nbsp; Evaluation &amp; State Management &nbsp;"]
+        TokenAppend --> Buffer["&nbsp; Current Expression &nbsp;<br/>&nbsp; String &nbsp;"]
         OpAppend --> Buffer
         DelChar --> Buffer
         ClearAll --> Buffer
         Buffer --> Display
-        EvalEngine --> SafeParse["Safe Math Parser &<br/>DivZero Guard"]
-        SafeParse --> OutputState["Format Floating<br/>Result"]
+        EvalEngine --> SafeParse["&nbsp; Safe Math Parser &amp; &nbsp;<br/>&nbsp; DivZero Guard &nbsp;"]
+        SafeParse --> OutputState["&nbsp; Format Floating &nbsp;<br/>&nbsp; Result &nbsp;"]
         OutputState --> Display
     end
 ```
